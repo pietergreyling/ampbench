@@ -34,6 +34,8 @@ During AMP URL validation, it builds referable, support-friendly sharable URLs s
 
 ![AMPBench in action 04](screenshot_ampench_04.png?raw=true)
 
+![AMPBench in action 05](screenshot_ampench_05.png?raw=true)
+
 
 ### License
 
@@ -49,6 +51,7 @@ Install the [Node.js](https://nodejs.org) [Active LTS version](https://github.co
 
 Now do the following from a terminal command-line session:
     
+    $ npm install amphtml-validator -g
     $ git clone https://github.com/ampproject/ampbench.git
     $ cd ampbench
     $ npm install
