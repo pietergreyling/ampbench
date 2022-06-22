@@ -26,6 +26,15 @@ During AMP URL validation, it builds referable, support-friendly sharable URLs s
 
 ![AMPBench in action](SCREENSHOT.png?raw=true)
 
+![AMPBench in action 01](screenshot_ampench_01.png?raw=true)
+
+![AMPBench in action 02](screenshot_ampench_02.png?raw=true)
+
+![AMPBench in action 03](screenshot_ampench_03.png?raw=true)
+
+![AMPBench in action 04](screenshot_ampench_04.png?raw=true)
+
+
 ### License
 
 AMPBench is licensed under the [Apache 2.0 LICENSE](http://www.apache.org/licenses/LICENSE-2.0.txt).
@@ -44,7 +53,8 @@ Now do the following from a terminal command-line session:
     $ cd ampbench
     $ npm install
     $ node ampbench_main.js
-		[AMPBENCH:V.1.0][2022-06-21T19:38:21.802Z] service started on host [:::8080]
+		[AMPBENCH:V.1.0][2022-06-22T16:07:35.825Z] service started on host [:::8080]
+		[VALIDATOR REFRESH]: validator not found or out of date, loading new validator
 		...
     
 Also try navigating to these links from your web browser:
