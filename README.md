@@ -24,7 +24,7 @@ During AMP URL validation, it builds referable, support-friendly sharable URLs s
 
 - [https://ampbench.appspot.com/validate?url=https://ampbyexample.com/](https://ampbench.appspot.com/validate?url=https://ampbyexample.com/)
 
-![AMPBench in action](/SCREENSHOT.png?raw=true)
+![AMPBench in action](SCREENSHOT.png?raw=true)
 
 ### License
 
@@ -44,6 +44,8 @@ Now do the following from a terminal command-line session:
     $ cd ampbench
     $ npm install
     $ node ampbench_main.js
+		[AMPBENCH:V.1.0][2022-06-21T19:38:21.802Z] service started on host [:::8080]
+		...
     
 Also try navigating to these links from your web browser:
 
@@ -59,6 +61,40 @@ Even try this from the command-line:
     $ curl http://localhost:8080/api?url=https://ampbyexample.com/
     $ curl http://localhost:8080/api1?url=https://ampbyexample.com/
     $ curl http://localhost:8080/api2?url=https://ampbyexample.com/
+    $ curl http://localhost:8080/api2\?url\=https://www.pinterest.com/amp/explore/black-kittens/
+    {
+    "status": "FAIL",
+    "url": "https://www.pinterest.com/amp/explore/black-kittens/",
+    "http_response": {
+        "url": "https://www.pinterest.com/amp/explore/black-kittens/",
+        "http_code": 200,
+        "http_text": "HTTP Status: 200 - OK",
+        "response_time_ms": 725,
+        "redirected": false,
+        "redirects_count": 0,
+        "redirects_urls": [],
+        "is_https": true,
+        "is_https_cert_authorized": true,
+        "is_https_ssl_error": ""
+    },
+    "extra": "This URL does not appear to be a Canonical URL: it is possibly an AMP HTML URL",
+    "amp_links": {
+        "canonical_url": "https://www.pinterest.com/ebarrsmith/black-kittens/",
+        "amphtml_url": "",
+        "amphtml_urls": [],
+        "amp_uses_feed": false
+    },
+    "amp_required_markup": {
+        "status": "https://www.pinterest.com/amp/explore/black-kittens/: line 1, col 0: The native JavaScript AMPHTML Validator (validator.js) has been turned down. If you are seeing this error, update your tooling to instead load the API compatible WebAssembly AMPHTML Validator (validator_wasm.js) instead.",
+        "warning_count": 0,
+        "warning_status": "PASS",
+        "results": [
+            "AMP HTML required markup content appears to be valid"
+        ]
+    },
+    "amp_validation": { ...
+
+![AMPBench in action - kittens](screenshot_kittens.png?raw=true)
 
 #### Utilities
 
